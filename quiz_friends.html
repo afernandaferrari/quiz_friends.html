@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+        <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+
+        <title>Quiz Friends</title>
+    </head>
+
+    <body>  
+        <div>
+            <h1 id="titulo">Quiz - Friends</h1>
+            <p id="subtitulo">O que você conhece sobre a série Friends?</p>
+            <br>
+        </div>
+        <form>
+
+            <fieldset class="campo">
+                <div class="campo">
+                    <label for="question1"><strong>1) Quem disse: "Não sei por quanto tempo vamos precisar ficar aqui, talvez <br> seja preciso repovoar a Terra!"?</strong></label>
+                    <input type="text" name="question1" id="question1" required>
+                </div>
+                <div class="campo">
+                    <label for="question2"><strong>2) Qual foi o desenho da tatuagem que Rachel fez no quadril?</strong></label>
+                    <input type="text" name="question2" id="question2" required>
+                </div>
+            </fieldset> 
+            <div class="campo">
+                <label><strong>3) Ross é alérgico a...</strong></label>
+                <label>
+                    <input type="radio" name="question3" value="lagosta,amendoim_e_ovo" checked>Lagosta, amendoim e ovo
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="lagosta,leite_e_kiwi">Lagosta, leite e kiwi
+                </label>
+                <label>
+                    <input type="radio" name="question3" value="lagosta,amendoim_e_kiwi">Lagosta, amendoim e kiwi
+                </label>
+            </div>
+            <div class="campo">
+                <label for="question4"><strong>4) Qual é o número de identificação do táxi da Phoebe?</strong></label>
+                <select id="question4" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>3X96</option>
+                  <option>2X85</option>
+                  <option>2X82</option>
+                  <option>5X82</option>
+                </select>
+            </div>
+            <div class="campo">
+                <label><strong>5) Joey consegue um papel em Days of Our Lives em qual temporada?</strong></label>
+                <label>
+                    <input type="radio" name="question5" value="1" checked>1ª Temporada
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="2">2ª Temporada
+                </label>
+                <label>
+                    <input type="radio" name="question5" value="4">4ª Temporada
+                </label>
+            </div>        
+            <div class="campo">
+                <label><strong>6) Em qual temporada Phoebe se torna mãe de aluguel para seu meio-irmão?</strong></label>
+                <label>
+                    <input type="radio" name="question6" value="2" checked>2ª Temporada
+                </label>
+                <label>
+                    <input type="radio" name="question6" value="3">3ª Temporada
+                </label>
+                <label>
+                    <input type="radio" name="question6" value="4">4ª Temporada
+                </label>
+            </div>  
+             <div class="campo">
+                <label for="question7"><strong>7) Rachel e Monica conseguem subornar Joey e Chandler para conseguirem <br> o apartamento de volta com ingressos para a temporada de qual time?</strong></label>
+                <select id="question7" required>
+                  <option selected disabled value="">Selecione</option>
+                  <option>Lakers</option>
+                  <option>Cleveland Cavaliers</option>
+                  <option>Knicks</option>
+                  <option>Orlando Magic</option>
+                </select>
+            </div>
+            <div class="campo">
+                <br>
+                <p id="subtitulo">Por último, mesmo não sendo uma pergunta do roteiro... </p>
+                <br>
+                <label for="experiencia"><strong>10) O que você mudaria na série? </strong></label>
+                <textarea rows="6" style="width: 26em" id="experiencia" name="experiencia"></textarea>
+                <br>
+            </div>
+
+            <button class="botao" type="submit" onsubmit="">Concluído</button>            
+
+        </form>
+
+    </body>
+
+</html>
